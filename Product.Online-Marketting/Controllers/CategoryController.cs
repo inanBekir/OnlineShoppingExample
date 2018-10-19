@@ -10,6 +10,7 @@ using Product.Online_Marketting.Entity;
 
 namespace Product.Online_Marketting.Controllers
 {
+    [Authorize(Roles="admin")]
     public class CategoryController : Controller
     {
         private DataContext db = new DataContext();

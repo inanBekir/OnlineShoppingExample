@@ -11,6 +11,7 @@ using Product.Online_Marketting.Entity;
 
 namespace Product.Online_Marketting.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class ProductController : Controller
     {
         private DataContext db = new DataContext();

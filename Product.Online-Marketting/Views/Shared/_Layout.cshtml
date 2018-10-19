@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="/theme/css/style.css">
 
-    <title>Hello, world!</title>
+    <title>Youcanbuyeverythink.tk</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">E-BUY</a>
+            <a class="navbar-brand" href="/">E-BUY</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,10 +39,8 @@
                     </li>
                    
                 </ul>
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                @Html.Action("Summary","Cart")
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </nav>
