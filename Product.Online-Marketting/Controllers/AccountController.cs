@@ -125,7 +125,15 @@ namespace Product.Online_Marketting.Controllers
         // GET: Account
         public ActionResult Login()
         {
-            return View();
+            if (Request.IsAuthenticated)
+            {
+
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [HttpPost]

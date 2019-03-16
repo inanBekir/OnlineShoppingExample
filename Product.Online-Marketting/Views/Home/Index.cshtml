@@ -6,13 +6,20 @@
 
 
 
-<div class="jumbotron">
-    <div class="container">
-    <h1 class="display-4">Welcome to different online shopping.</h1>
-    <p class="lead">We changed a everythink just try.</p>
-    <hr class="my-4">
-    <p>Simple shopping.Forget everythink, we changed online shopping style.<p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<div class="container pb-5">
+
+
+
+   
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="~/theme/img/slider2.jpg" style="width:100%">
+        <img class="mySlides" src="~/theme/img/camera.jpg" style="width:100%">
+        <img class="mySlides" src="~/theme/img/slider3.jpg" style="width:100%">
+        <img class="mySlides" src="~/theme/img/slider1.jpg" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
 </div>
@@ -22,17 +29,13 @@
 
 
 
-   
-
 <div class="container pb-5">
 
-    
-    @Html.Partial("_ProductList",Model)
+
+    @Html.Partial("_ProductList", Model)
 
 
 
 </div>
 
 
-   
-    
